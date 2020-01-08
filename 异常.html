@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function hhh() {
+            try {
+                var aa = document.getElementById("a").value;
+                if (aa == "") {
+                    throw "用户名不能为空";
+                }
+                else if(aa=="pch")
+                {
+                    alert(aa+"真孙啊");
+                }
+                else {
+                    alert("用户名可用");
+                }
+            }catch (err) {
+                alert(err);
+
+            }
+        }
+function cao() {
+            alert("你应该点旁边那个");
+
+}
+    </script>
+</head>
+<body>
+<form>
+  用户名：<label for="a"></label><input type="text" id="a">
+<input type="button" value="提交" onclick="hhh()">
+   男 <label>
+    <input type="radio" name="1" onclick="cao()">
+</label>
+    女 <label>
+    <input type="radio" name="1">
+</label>
+</form>
+</body>
+</html>
